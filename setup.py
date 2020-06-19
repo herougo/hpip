@@ -1,4 +1,4 @@
-from distutils.core import setup, find_packages
+from setuptools import setup, find_packages
 
 setup(name='H Pip',
       version='1.0',
@@ -6,5 +6,8 @@ setup(name='H Pip',
       author='',
       author_email='',
       url='',
-      packages=find_packages(),
+      packages=find_packages(where='hpip'),
+      package_dir={
+          '': 'hpip',
+      },
      )
