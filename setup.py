@@ -6,8 +6,5 @@ setup(name='H Pip',
       author='',
       author_email='',
       url='',
-      packages=find_packages(where='hpip'),
-      package_dir={
-          '': 'hpip',
-      },
+      packages=['hpip'],
      )
